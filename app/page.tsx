@@ -1,9 +1,13 @@
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <h1>My Next.js Practice Project</h1>
-      <p>Deployed using Vercel.</p>
+    <main className="dashboard">
+      <h1>Next.js Playground</h1>
+
+      <Link href="/dashboard">
+        Open Dashboard
+      </Link>
     </main>
   );
 }
