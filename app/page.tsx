@@ -1,9 +1,17 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <h1>My Next.js Practice Project</h1>
-      <p>Deployed using Vercel.</p>
-    </main>
+    <div className="container">
+      <h2>Welcome to My Blog</h2>
+
+      <p>
+        This is a blog built using Next.js App Router.
+      </p>
+
+      <Link href="/blog" className="button">
+        Read Blog
+      </Link>
+    </div>
   );
 }
