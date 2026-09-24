@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "nextjs-seo",
+    "title": "Understanding Next.js SEO",
+    "description": "Learn how Next.js helps with SEO and server rendering.",
+    "content": "Next.js provides several rendering strategies that can help make web applications SEO-friendly."
+  },
+  {
+    "slug": "react-basics",
+    "title": "React Basics",
+    "description": "Learn the fundamentals of React components and state.",
+    "content": "React is a JavaScript library for building user interfaces using reusable components."
+  },
+  {
+    "slug": "javascript-promises",
+    "title": "Understanding JavaScript Promises",
+    "description": "Learn how JavaScript Promises work with asynchronous operations.",
+    "content": "A Promise represents the eventual completion or failure of an asynchronous operation."
+  }
+]
