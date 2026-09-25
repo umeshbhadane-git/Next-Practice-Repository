@@ -1,26 +1,116 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #fd3333;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-row button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: white;
+}
+
+.form-row button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d00;
+  margin-top: 8px;
+}
+
+.success {
+  color: green;
+  margin-top: 8px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.task-item form:first-child {
+  flex: 1;
+}
+
+.task-title {
+  background: none;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-button {
+  border: none;
+  background: #e53935;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.empty {
+  color: #777;
+  text-align: center;
+  padding: 30px;
 }
