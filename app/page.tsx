@@ -1,9 +1,27 @@
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <h1>My Next.js Practice Project</h1>
-      <p>Deployed using Vercel.</p>
+    <main className="page">
+      <h1>My SaaS Application</h1>
+
+      <p>
+        Welcome to our application.
+      </p>
+
+      <p>
+        This is a public marketing page.
+      </p>
+
+      <div className="actions">
+        <Link href="/login">
+          Go to Login
+        </Link>
+
+        <Link href="/dashboard">
+          Dashboard
+        </Link>
+      </div>
     </main>
   );
 }
